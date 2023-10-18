@@ -1,0 +1,67 @@
+body{
+    background-color: #444040;
+    color: #fff;
+}
+
+button{
+    width: 75px;
+    height: 75px;
+    border: 1px solid;
+    border-radius: 100%;
+    margin-top: 5px;
+    font-size: 30px;
+    background-color: #444040;
+    color: white;
+    border-color: #444040;
+    position: relative;
+}
+
+button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.top{
+    color: black;
+    background-color: hsl(0, 2%, 55%);
+}
+
+.left{
+    background-color: orange;
+}
+
+.zero{
+    width: 150px;
+    border-radius: 40px;
+    text-align: left;
+    
+}
+
+.container{
+    position: fixed;
+    background-color: black;
+    width: 350px;
+    height: 620px;
+    border: 1px solid;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.result{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 100px;
+    font-size: 55px;
+    min-height: 60px; /* Минимальная высота элемента .result */
+    line-height: 60px;
+}
+
+.content{
+    margin-top: 30px;
+}
+
+.button-text {
+    margin-left: 10px; 
+}

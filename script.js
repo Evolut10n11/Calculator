@@ -37,7 +37,6 @@ function performOperation() {
     previousOperand = "";
   }
   
-  // Обработчик события для каждой кнопки
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const buttonText = button.textContent;
@@ -73,9 +72,18 @@ function performOperation() {
             currentOperand = "";
           }
         }
-      } else {
+      } else if (currentOperand.length < 11) { // Проверка на максимальную длину
         currentOperand += buttonText;
         updateDisplay();
       }
     });
   });
+
+  function updateDisplay() {
+    // Проверяем, если результат слишком длинный
+    if (currentOperand.length > 11) {
+      result.textContent = "Ошибка";
+    } else {
+      result.textContent = currentOperand;
+    }
+  }
